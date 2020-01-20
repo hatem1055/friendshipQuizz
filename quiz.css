@@ -1,0 +1,164 @@
+body{
+      background-color:#f5f5f5;
+      overflow-x:hidden; 
+}
+.styled-img{
+     height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid #e7e7e7;
+}
+.right{
+    float:right;
+}
+.inline{
+    display:inline-block; 
+}
+section{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.name{
+        color:black;
+    font-weight:bold; 
+}
+.grey{
+    color:#333; 
+}
+label{
+    position:absolute;
+    z-index:9999; 
+}
+li{
+    list-style:none; 
+}
+.pages-header h1{
+    font-weight:bold;
+    margin-bottom:20px;
+}
+ .main .profile-pic{
+    border-radius:50%;
+    border-color:black;
+    border:3px solid;
+    height:208px;
+    width:208px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+ .main{
+    position:relative;
+    background-color:white;
+    border: 4px solid #ececec;
+    width:546px;
+    left:30%;
+}
+/*fisrt page styling*/
+.first-page{
+    display:block; 
+}
+.first-page p{
+    color:#333;
+}
+.first-page .main h1{
+    margin-bottom:10px; 
+}
+.btn.take-quiz{
+    margin-bottom:12px; 
+}
+.btn.take-quiz i{
+    margin-right:5px; 
+}
+.visitor-name{
+    border: navajowhite;
+    border-bottom: 1px solid #046cdc;
+    margin: 0px;
+}
+input.visitor-name{
+ width:122px; 
+}
+.red-placeholder::placeholder{
+ color:red;
+}
+/*end first page*/
+/*start the quiz*/
+.the-quiz-page{
+    display:none;
+}
+.the-quiz-page .main h2{
+margin-left:10px; 
+}
+.quistion{
+    position:relative;
+    display:none;  
+}
+.quistion1{
+    display:block; 
+}
+.answers li{
+    margin-left: -26px;
+    margin-bottom:1px; 
+}
+.answers label{
+    margin-left:19px;  
+    font-size: 21px;
+    position: relative;
+    top: 3px;
+}
+.next,.to-result{
+   position:absolute;
+    bottom:0;
+    right:0;
+    margin-right:10px;
+}
+.right-style{
+    width: 100%;
+    background-color:rgb(34, 197, 14);
+    padding-left: 3px; 
+}
+.wrong-style{
+     width: 100%;
+    background-color: red;
+    padding-left: 3px;
+}
+/*end the quiz*/
+/*start result*/
+.result{
+ display:none; 
+}
+.result .main{
+ width: 759px;
+ left:24%;
+}
+.arrow-div{
+     font-size: 88px;
+    position: relative;
+    top: 101px
+}
+.perc .name{
+ color:white;
+}
+.perc{
+ color:white;
+}
+.good-result{
+ background-color:#0ed214ed;
+ margin-bottom:10px;
+  color:white; 
+}
+.bad-result{
+ background-color:red;
+ margin-bottom:10px;
+ color:white; 
+}
+.prev-results ul span{
+ margin:5px; 
+}
+.prev-results ul li{
+     padding: 7px;
+    margin-left: -37px;
+    width: 250px;
+    margin-right: 17px;
+}
+/*end result*/
+

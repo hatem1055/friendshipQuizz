@@ -1,0 +1,25 @@
+@media(max-width:400px){
+    /*start first page*/
+ .main{
+        width: 276px !important;
+        left:1.5% !important;
+    }
+ .main h3 {
+        font-size:20px; 
+    }
+    .first-page .main-body p{
+        font-size:15px; 
+    }
+    .the-quiz-page .main h2{
+     font-size:22px; 
+    }
+    .answers label {
+    margin-left: 19px;
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+    }
+    .arrow-div{
+     top:0;
+    }
+}
