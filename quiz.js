@@ -1,10 +1,11 @@
-
 $(document).ready(function(){
     //database
     // the right answer counter
     var trueAns=0,
     //the visitor name
-        visitorName="";
+        visitorName="",
+        //quistions count
+        quistionsCount=$(".quistion").length;
     //moving between pages
 $(".mover").click(function (e){
     e.preventDefault();
@@ -45,8 +46,8 @@ $(".next,.to-result").click(function(){
  if($($(this).attr("data-parent")+" .checked").length==1){
   //this is for the callback function
   var thisBtn=$(this);
-    $(this).parent().parent().fadeOut(1000,function(){
-     thisBtn.parent().parent().next().fadeIn();
+    $(this).parent().parent().parent().fadeOut(1000,function(){
+     thisBtn.parent().parent().parent().next().fadeIn();
     });
     //cheking if the user choose right or wrong answer
 if($($(this).attr("data-parent")+" .checked").parent().hasClass("right-ans")){
@@ -55,8 +56,8 @@ if($($(this).attr("data-parent")+" .checked").parent().hasClass("right-ans")){
      trueAns+=1;
      // changing the result page
           $(".result-number").text(trueAns);
-     $(".wrong-number").text(12-trueAns);
-     $(".actual-ratio").text(Math.round(trueAns/12*100)+"%");
+     $(".wrong-number").text(quistionsCount-trueAns);
+     $(".actual-ratio").text(Math.round(trueAns/quistionsCount*100)+"%");
      $(".friend-name").text($(".visitor-name").text());
     }
         else if($($(this).attr("data-parent")+" .checked").parent().hasClass("wrong-ans")){
@@ -78,7 +79,7 @@ $(".to-result").click(function (){
     $(".the-quiz-page").hide();
     $(".result").show();
     //styling the result page depanding on the right answers counter
-      if(trueAns>6){
+      if(trueAns>quistionsCount/2){
       $(".perc").addClass("good-result");
      }
      else{
@@ -96,3 +97,4 @@ if($(window).width()<=400){
  $(".arrow-div i").attr("class","fas fa-arrows-alt-v");
 }
 });
+
