@@ -22,4 +22,13 @@
     .arrow-div{
      top:0;
     }
+    .button-li {
+    height: 34px;
+padding-top: 26px;
+padding-bottom: 26px;
+margin: 10px;
+}
+.next, .to-result {
+    margin-left: 30%;
+}
 }
